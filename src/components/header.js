@@ -19,7 +19,7 @@ export default function Header () {
           prefetch={false}
         >
           <CameraIcon className="h-6 w-6" />
-          <span className="sr-only">Instagram bildeanalyse</span>
+          <span className="sr-only">Nexttemplate</span>
         </Link>
         <div className="ml-auto flex items-center gap-4 sm:gap-6">
           <DropdownMenu>
