@@ -96,4 +96,16 @@ Følg disse trinnene for å sette opp prosjektet ditt:
 15. **Åpne localhost:**
     Åpne nettleseren din og naviger til [http://localhost:3000](http://localhost:3000) for å se appen din.
 
+16. **Rens hele prosjektet:**
+    Kjør følgende kommandoer i terminalen
+    ```sh
+    Remove-Item -Recurse -Force node_modules
+    Remove-Item -Force package-lock.json
+    npm install -g npm-check-updates
+    ncu -u
+    npm install
+    npm cache clean --force
+    npm run build
+    ```
+
 Nå kan du begynne å utvikle din Next.js-applikasjon!
