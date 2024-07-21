@@ -44,14 +44,26 @@ Følg disse trinnene for å sette opp prosjektet ditt:
     npm install
     ```
 
-10. **Initialiser et nytt lokalt git-repository:**
+10. **(Valgfritt) Rens hele prosjektet:**
+    Kjør følgende kommandoer i terminalen
+    ```sh
+    Remove-Item -Recurse -Force node_modules
+    Remove-Item -Force package-lock.json
+    npm install -g npm-check-updates
+    ncu -u
+    npm install
+    npm cache clean --force
+    npm run build
+    ```
+
+11. **Initialiser et nytt lokalt git-repository:**
     ```sh
     git init --initial-branch=main
     git add .
     git commit -m "Første commit"
     ```
 
-11. **Opprett et nytt fjern repo på GitHub:**
+12. **Opprett et nytt fjern repo på GitHub:**
 
     - **Manuelt via GitHub nettsiden:**
       - Gå til GitHub.
@@ -76,36 +88,24 @@ Følg disse trinnene for å sette opp prosjektet ditt:
         gh repo create nytt-repo-navn --public --source . --remote
         ```
 
-12. **Legg til fjernrepo (remote repository):**
+13. **Legg til fjernrepo (remote repository):**
     Hvis du opprettet repoet via GitHub nettsiden, må du legge til fjernrepoet manuelt. Kopier URL-en til det nyopprettede repoet fra GitHub og kjør følgende kommando:
     ```sh
     git remote add origin https://github.com/brukernavn/nytt-repo-navn.git
     ```
 
-13. **Push til remote-repo:**
+14. **Push til remote-repo:**
     ```sh
     git push -u origin main
     ```
 
-14. **Start utviklingsserveren:**
+15. **Start utviklingsserveren:**
     Etter å ha installert avhengigheter og initialisert ditt git-repository, kan du starte utviklingsserveren.
     ```sh
     npm run dev
     ```
 
-15. **Åpne localhost:**
+16. **Åpne localhost:**
     Åpne nettleseren din og naviger til [http://localhost:3000](http://localhost:3000) for å se appen din.
-
-16. **Rens hele prosjektet:**
-    Kjør følgende kommandoer i terminalen
-    ```sh
-    Remove-Item -Recurse -Force node_modules
-    Remove-Item -Force package-lock.json
-    npm install -g npm-check-updates
-    ncu -u
-    npm install
-    npm cache clean --force
-    npm run build
-    ```
 
 Nå kan du begynne å utvikle din Next.js-applikasjon!
