@@ -44,14 +44,14 @@ Følg disse trinnene for å sette opp prosjektet ditt:
     npm install
     ```
 
-10. **Initialiser et nytt git-repository:**
+10. **Initialiser et nytt lokalt git-repository:**
     ```sh
     git init --initial-branch=main
     git add .
     git commit -m "Første commit"
     ```
 
-11. **Opprett et nytt repo på GitHub:**
+11. **Opprett et nytt fjern repo på GitHub:**
 
     - **Manuelt via GitHub nettsiden:**
       - Gå til GitHub.
