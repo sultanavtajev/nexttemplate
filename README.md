@@ -12,8 +12,8 @@ Følg disse trinnene for å sette opp prosjektet ditt:
 
 1. **Klon dette repoet:**
     ```sh
-    git clone https://github.com/sultanavtajev/nexttemplate.git
-    cd nexttemplate
+    git clone https://github.com/sultanavtajev/nexttemplate.git nyttprosjekt
+    cd nyttprosjekt
     ```
 
 2. **Fjern den gamle remote-referansen:**
