@@ -28,23 +28,25 @@ Følg disse trinnene for å sette opp prosjektet ditt:
 
 4. **Åpne `package.json` og endre feltet "name" til det appen din skal hete.**
 
-5. **Slett `package-lock.json`:**
+5. **Åpne `src/app/layout.js` og endre feltene "title" og "description" under metadata til det som er riktig for appen din**
+
+6. **Slett `package-lock.json`:**
     ```sh
     Remove-Item -Force package-lock.json
     ```
 
-6. **Avslutt VSCode.**
+7. **Avslutt VSCode.**
 
-7. **Endre navnet på prosjektmappen til det du ønsker.**
+8. **Endre navnet på prosjektmappen til det du ønsker.**
 
-8. **Start VSCode på nytt og åpne prosjektmappen.**
+9. **Start VSCode på nytt og åpne prosjektmappen.**
 
-9. **Installer avhengigheter:**
+10. **Installer avhengigheter:**
     ```sh
     npm install
     ```
 
-10. **(Valgfritt) Rens hele prosjektet:**
+11. **(Valgfritt) Rens hele prosjektet:**
     Kjør følgende kommandoer i terminalen
     ```sh
     Remove-Item -Recurse -Force node_modules
@@ -56,14 +58,14 @@ Følg disse trinnene for å sette opp prosjektet ditt:
     npm run build
     ```
 
-11. **Initialiser et nytt lokalt git-repository:**
+12. **Initialiser et nytt lokalt git-repository:**
     ```sh
     git init --initial-branch=main
     git add .
     git commit -m "Første commit"
     ```
 
-12. **Opprett et nytt fjern repo på GitHub:**
+13. **Opprett et nytt fjern repo på GitHub:**
 
     - **Manuelt via GitHub nettsiden:**
       - Gå til GitHub.
@@ -88,24 +90,24 @@ Følg disse trinnene for å sette opp prosjektet ditt:
         gh repo create nytt-repo-navn --public --source . --remote
         ```
 
-13. **Legg til fjernrepo (remote repository):**
+14. **Legg til fjernrepo (remote repository):**
     Hvis du opprettet repoet via GitHub nettsiden, må du legge til fjernrepoet manuelt. Kopier URL-en til det nyopprettede repoet fra GitHub og kjør følgende kommando:
     ```sh
     git remote add origin https://github.com/brukernavn/nytt-repo-navn.git
     ```
 
-14. **Push til remote-repo:**
+15. **Push til remote-repo:**
     ```sh
     git push -u origin main
     ```
 
-15. **Start utviklingsserveren:**
+16. **Start utviklingsserveren:**
     Etter å ha installert avhengigheter og initialisert ditt git-repository, kan du starte utviklingsserveren.
     ```sh
     npm run dev
     ```
 
-16. **Åpne localhost:**
+17. **Åpne localhost:**
     Åpne nettleseren din og naviger til [http://localhost:3000](http://localhost:3000) for å se appen din.
 
 Nå kan du begynne å utvikle din Next.js-applikasjon!
